@@ -1,0 +1,39 @@
+{
+  "name": "tdd-katas",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Daniel Zlotin <zlotindaniel@gmail.com>",
+  "publishConfig": {
+    "registry": "none"
+  },
+  "main": "src/BowlingGame.js",
+  "scripts": {
+    "build": ":",
+    "test": "jest",
+    "watch": "jest --watch",
+    "release": ":"
+  },
+  "dependencies": {
+    "lodash": ">=4.17.5"
+  },
+  "devDependencies": {
+    "jest": "23.x.x"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}

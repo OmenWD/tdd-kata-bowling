@@ -1,0 +1,11 @@
+logs
+*.log
+npm-debug.log*
+coverage
+.idea
+/out/
+.idea_modules/
+.gradle
+local.properties
+node_modules/
+package-lock.json
